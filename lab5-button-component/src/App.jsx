@@ -5,8 +5,21 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 function App() {
 
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0a0e27 0%, #1a1a3e 100%)', padding: '40px 20px' }}>
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{
+      minHeight: '100vh',
+      background: `
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 60px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 50px 50px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 10px, #eee, rgba(0,0,0,0))
+      `,
+      backgroundSize: '200px 200px',
+      backgroundColor: '#0a0e27',
+      padding: '40px 20px',
+      position: 'relative'
+    }}>
+      <div style={{ width: '100%', maxWidth: 'none', padding: '0 20px' }}>
         <h1 style={{ textAlign: 'center', color: '#fff', fontSize: '2.5rem', marginBottom: '50px', textShadow: '0 0 10px rgba(230, 0, 35, 0.5)' }}>
           🚀 Cosmic Button Explorer 🌟
         </h1>
