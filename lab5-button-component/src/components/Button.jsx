@@ -46,6 +46,7 @@ import "./Button.css";
  */
 
 export function Button({
+  /* Setting some defaults for props */
   children,
   variant = "fill",
   size = "medium",

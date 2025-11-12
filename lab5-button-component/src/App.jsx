@@ -8,6 +8,7 @@ function App() {
     <>
       <h1>Lab 5 - Button Component</h1>
 
+      {/* Trying out various button configurations */}
       <Button>My Button</Button>
       <Button>Fill/Medium/Primary</Button>
       <Button variant="outline">Outline/Medium/Primary</Button>
