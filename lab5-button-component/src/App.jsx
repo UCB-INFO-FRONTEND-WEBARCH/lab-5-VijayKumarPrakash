@@ -33,6 +33,10 @@ function App() {
           🚀 Cosmic Button Explorer 🌟
         </h1>
 
+        <p style={{ textAlign: 'center', color: '#ffffffff', fontSize: '0.9rem', marginBottom: '40px', maxWidth: '500px' }}>
+          ✨ Note to Professor Kay: I went rogue with this assignment and had a bit of fun! 🎉
+        </p>
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', alignItems: 'center' }}>
 
           {/* Button 1: Default */}

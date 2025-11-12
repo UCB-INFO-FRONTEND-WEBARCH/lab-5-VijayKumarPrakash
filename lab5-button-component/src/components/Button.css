@@ -62,6 +62,13 @@
 .variant-fill.color-secondary {
   background: var(--color-secondary-bg);
   color: var(--color-secondary-text);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.2s ease, filter 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.variant-fill.color-secondary:hover:not(.disabled) {
+  filter: invert(1);
+  border: 1px solid #000000;
 }
 
 /* outline */
