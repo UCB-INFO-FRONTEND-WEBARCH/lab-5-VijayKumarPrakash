@@ -1,8 +1,17 @@
 import './App.css'
 import { Button } from './components/Button'
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
+import { useState } from 'react';
 
 function App() {
+  const [wish, setWish] = useState('');
+
+  const handleSendWish = () => {
+    if (wish.trim()) {
+      alert(`✨ Wish sent to the cosmos: "${wish}"`);
+      setWish('');
+    }
+  };
 
   return (
     <div style={{
@@ -67,8 +76,28 @@ function App() {
             <label style={{ color: '#888', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
               🎆 Fill / Large / Secondary / With Icon
             </label>
-            <div style={{ marginTop: '12px' }}>
-              <Button color="secondary" size="large" icon={<RocketLaunchIcon />} onClick={() => alert('✨ Wishes sent to the cosmos!')}>
+            <div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+              <input
+                type="text"
+                placeholder="Enter your cosmic wish..."
+                value={wish}
+                onChange={(e) => setWish(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && handleSendWish()}
+                style={{
+                  padding: '10px 15px',
+                  borderRadius: '8px',
+                  border: '1px solid #E60023',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  color: '#fff',
+                  fontSize: '0.875rem',
+                  outline: 'none',
+                  transition: 'all 0.2s ease',
+                  minWidth: '250px'
+                }}
+                onFocus={(e) => e.target.style.backgroundColor = 'rgba(230, 0, 35, 0.1)'}
+                onBlur={(e) => e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'}
+              />
+              <Button color="secondary" size="large" icon={<RocketLaunchIcon />} onClick={handleSendWish}>
                 Make a Cosmic Wish
               </Button>
             </div>
