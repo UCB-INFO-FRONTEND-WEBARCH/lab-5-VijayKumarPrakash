@@ -19,15 +19,15 @@ function App() {
       padding: '40px 20px',
       position: 'relative'
     }}>
-      <div style={{ width: '100%', maxWidth: 'none', padding: '0 20px' }}>
+      <div style={{ width: '100%', maxWidth: 'none', padding: '0 20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h1 style={{ textAlign: 'center', color: '#fff', fontSize: '2.5rem', marginBottom: '50px', textShadow: '0 0 10px rgba(230, 0, 35, 0.5)' }}>
           🚀 Cosmic Button Explorer 🌟
         </h1>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', alignItems: 'center' }}>
 
           {/* Button 1: Default */}
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <label style={{ color: '#888', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
               🌍 Fill / Medium / Primary
             </label>
@@ -39,7 +39,7 @@ function App() {
           </div>
 
           {/* Button 2: Outline */}
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <label style={{ color: '#888', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
               ✨ Outline / Medium / Primary
             </label>
@@ -51,7 +51,7 @@ function App() {
           </div>
 
           {/* Button 3: Text */}
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <label style={{ color: '#888', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
               🌌 Text / Medium / Primary
             </label>
@@ -63,7 +63,7 @@ function App() {
           </div>
 
           {/* Button 4: Secondary with Icon */}
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <label style={{ color: '#888', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
               🎆 Fill / Large / Secondary / With Icon
             </label>
@@ -75,7 +75,7 @@ function App() {
           </div>
 
           {/* Button 5: Disabled */}
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <label style={{ color: '#888', fontSize: '0.875rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
               🛑 Fill / Small / Disabled
             </label>
